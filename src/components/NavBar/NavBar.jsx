@@ -1,5 +1,3 @@
-import React from 'react'
-
 const NavBar = () => {
   return (
     <nav>
@@ -16,7 +14,7 @@ const NavBar = () => {
                 <a href="/">Tartas</a>
             </li>
             <li>
-                <a href="/">Postresgit remote add origin https://github.com/Shinshi1/React-JS---Coder-House.git</a>
+                <a href="/">Postres</a>
             </li>
             <li>
                 <img src="/assets/cart.svg" alt="Carrito de compras" />

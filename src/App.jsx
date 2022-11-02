@@ -8,13 +8,15 @@ function App() {
   let titulo = <h3 style={styleH3}> Hola Comisión #34815! 🚀</h3>
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <NavBar/>
-        {titulo}
-        {/* <ItemListContainer/> */}
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <header className="App-header">
+          <NavBar/>
+          {titulo}
+          {/* <ItemListContainer/> */}
+        </header>
+      </div>
+    </>
   );
 }
 
