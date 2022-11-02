@@ -1,3 +1,5 @@
+import CartWidget from "./CartWidget"
+
 const NavBar = () => {
   return (
     <nav>
@@ -17,7 +19,7 @@ const NavBar = () => {
                 <a href="/">Postres</a>
             </li>
             <li>
-                <img src="/assets/cart.svg" alt="Carrito de compras" />
+                <CartWidget />
             </li>
         </ul>
     </nav>

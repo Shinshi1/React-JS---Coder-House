@@ -1,5 +1,5 @@
 import './App.css';
-// import ItemListContainer from "./components/ItemList/ItemListContainer"
+import ItemListContainer from './components/ItemList/ItemListContainer';
 import NavBar from './components/NavBar/NavBar';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <header className="App-header">
           <NavBar/>
           {titulo}
-          {/* <ItemListContainer/> */}
+          <ItemListContainer greeting="Mis Productos" />
         </header>
       </div>
     </>
