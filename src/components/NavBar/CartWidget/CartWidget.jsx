@@ -1,6 +1,8 @@
+import CartIcon from "./CartIcon"
+
 const CartWidget = () => {
   return (
-    <img src="/assets/cart.svg" alt="Carrito de compras" />
+    <CartIcon />
   )
 }
 

@@ -1,0 +1,24 @@
+.btn-info-container {
+    background: #000000;
+    background: linear-gradient(to right, #434343, #000000);
+}
+
+.btn-info {
+    background-color: #59BAB7;
+    color: #fff;
+    font-weight: 500;
+    padding: 6px 20px;
+    border-radius: 30px;
+    scale: .8;
+}
+
+.btn-info:active {
+    scale: .7;
+    background-color: #8ce3e0;
+    transition: background-color .1s;
+}
+
+.btn-info:hover {
+    background-color: #4e9d9a;
+    transition: background-color .3s;
+}

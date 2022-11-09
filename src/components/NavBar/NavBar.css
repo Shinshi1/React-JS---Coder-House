@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+
+.header {
+    height: 5.5rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1000000;
+    left: 0;
+    top: 0;
+    background: #4CA1AF;  /* fallback for old browsers */
+    background: linear-gradient(to right, #c4e0e5ee, #4ca2aff4); 
+
+    backdrop-filter: blur(3px);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 2rem;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: bold;
+    padding: 0 2.5rem;
+    line-height: 5.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-menu_item {
+    font-size: 1.1rem;
+    font-weight: 400;
+    width: max-content;
+}
+
+.nav-menu_link {
+    --clyppy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.nav-menu_link::after {
+    content: "";
+    display: block;
+    background: #000;
+    width: 100%;
+    height: 3px;
+
+    clip-path: var(--clyppy);
+    transition: clip-path .4s;
+}
+
+.nav-menu_link:hover {
+    --clyppy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.cart-container {
+    padding: 0 2.5rem;
+    margin: 1.5rem 0;
+    cursor: pointer;
+}
+
+.cart-icon {
+    scale: 1.2;
+    transition: scale .1s;
+}
+
+.cart-icon:active {
+    scale: .9;
+}

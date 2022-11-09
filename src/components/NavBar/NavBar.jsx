@@ -1,28 +1,28 @@
-import CartWidget from "./CartWidget"
+import CartWidget from "./CartWidget/CartWidget"
+import './navbar.css'
 
 const NavBar = () => {
   return (
-    <nav>
-        <ul>
-            <li>
-                <a href="/">
-                <h2>Postres La Creme</h2>
-                </a>
-            </li>
-            <li>
-                <a href="/">Tortas</a>
-            </li>
-            <li>
-                <a href="/">Tartas</a>
-            </li>
-            <li>
-                <a href="/">Postres</a>
-            </li>
-            <li>
+    <header className="header">
+        <nav className="nav">
+            <a href="/" className="logo">Postres La Creme</a>
+            <ul className="nav-menu">
+                <li className="nav-menu_item">
+                    <a href="/" className="nav-menu_link">Tortas</a>
+                </li>
+                <li className="nav-menu_item">
+                    <a href="/" className="nav-menu_link">Tartas</a>
+                </li>
+                <li className="nav-menu_item">
+                    <a href="/" className="nav-menu_link">Postres</a>
+                </li>
+                {/* mover a otro UL lugar↓ */}
+            </ul>
+            <div className="cart-container">
                 <CartWidget />
-            </li>
-        </ul>
-    </nav>
+            </div>
+        </nav>
+    </header>
   )
 }
 
