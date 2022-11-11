@@ -1,0 +1,19 @@
+@layer base {
+    :root {
+       --color-primary: #59bab7;
+       --color-primary-h: #4e9d9a;
+       --color-primary-a: #8ce3e0;
+   
+       --bg-nav: linear-gradient(to right bottom, #59bab7, #51b3b0, #49aba9, #41a4a2, #399d9b, #329795, #2b918f, #248b89, #1d8482, #157d7b, #0b7775, #00706e);
+       --bg-body: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+       --bg-cards: linear-gradient(to right, #434343, #000000);
+   
+       --font-family-1: 'Poppins', sans-serif;
+       --font-family-2: 'Philosopher', sans-serif;
+   }
+}
+
+body {
+    background-color: #ffc930;
+    background: center no-repeat url('/public/img/wall-123.jpg');
+}

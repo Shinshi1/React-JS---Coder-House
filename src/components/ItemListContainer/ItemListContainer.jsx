@@ -32,7 +32,7 @@ const ItemListContainer = () => {
  */
 
   return (
-    <div>
+    <div className='px-5 pt-28'>
       <ItemList products={products} />
     </div>
   )

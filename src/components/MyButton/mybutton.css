@@ -1,10 +1,10 @@
 .btn-info-container {
     background: #000000;
-    background: linear-gradient(to right, #434343, #000000);
+    background: var(--bg-cards);
 }
 
 .btn-info {
-    background-color: #59BAB7;
+    background-color: var(--color-primary);
     color: #fff;
     font-weight: 500;
     padding: 6px 20px;
@@ -14,11 +14,11 @@
 
 .btn-info:active {
     scale: .7;
-    background-color: #8ce3e0;
+    background-color: var(--color-primary-a);
     transition: background-color .1s;
 }
 
 .btn-info:hover {
-    background-color: #4e9d9a;
+    background-color: var(--color-primary-h);
     transition: background-color .3s;
 }

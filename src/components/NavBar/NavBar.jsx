@@ -1,11 +1,12 @@
-import CartWidget from "./CartWidget/CartWidget"
 import './navbar.css'
+import Logo from './Logo/Logo'
+import CartWidget from "./CartWidget/CartWidget"
 
 const NavBar = () => {
   return (
     <header className="header">
         <nav className="nav">
-            <a href="/" className="logo">Postres La Creme</a>
+            <Logo />
             <ul className="nav-menu">
                 <li className="nav-menu_item">
                     <a href="/" className="nav-menu_link">Tortas</a>

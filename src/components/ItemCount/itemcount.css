@@ -1,6 +1,6 @@
 .item-count-container {
     background: #000000;
-    background: linear-gradient(to right, #434343, #000000);
+    background: var(--bg-cards);
     color: #fff;
     display: flex;
     align-items: center;
@@ -14,20 +14,21 @@
     border-radius: 50%;
     height: 1.5rem;
     width: 1.5rem;
-    background-color: #59BAB7;
+    background-color: var(--color-primary);
     scale: 1.1;
     margin: .7rem;
 }
 
-.btn-count:active {
-    scale: .9;
-    background-color: #8ce3e0;
-    transition: background-color .1s;
+.btn-count:hover {
+    background-color: var(--color-primary-h);
+    transition: background-color .3s;
 }
 
-.btn-count:hover {
-    background-color: #4e9d9a;
-    transition: background-color .3s;
+.btn-count:active {
+    scale: .9;
+    background-color: var(--color-primary-a);
+    transition: background-color .1s;
+
 }
 
 .agregar-cart {
@@ -36,15 +37,16 @@
     line-height: 2.5;
     height: 100%;
     width: 100%;
-    background-color: #59BAB7;
+    background-color: var(--color-primary);
 }
 
 .agregar-cart:hover{
-    background-color: #4e9d9a;
+    background-color: var(--color-primary-h);
     transition: background-color .3s;
 }
 
 .agregar-cart:active{
-    background-color: #8ce3e0;
+    background-color: var(--color-primary-a);
     transition: background-color .1s;
 }
+

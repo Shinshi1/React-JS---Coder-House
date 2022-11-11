@@ -9,4 +9,12 @@ const getItems = () => {
     })
 }
 
+export const getSingleItem = () => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products[7])
+        }, 2000)
+    })
+}
+
 export default getItems

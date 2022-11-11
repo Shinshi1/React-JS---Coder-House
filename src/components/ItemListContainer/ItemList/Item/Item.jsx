@@ -2,9 +2,9 @@ import "./item.css"
 import MyButton from "../../../MyButton/MyButton"
 import ItemCount from "../../../ItemCount/ItemCount"
 
-const Item = ({title, price, stock, category, thumbnail, description}) => {
+const Item = ({id, title, price, stock, category, thumbnail}) => {
   return (
-    <div className="card">
+    <div className="card" key={id}>
       <div className="card-img">
         <img src={thumbnail} alt={title} />
       </div>

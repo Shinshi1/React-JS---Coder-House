@@ -1,7 +1,7 @@
 const products = [
         {
             id: 1,
-            title: "Soup Bowl Clear 8oz92008",
+            title: "Torta de Chocolate",
             price: 4139,
             stock: 18,
             category: null,
@@ -10,7 +10,7 @@ const products = [
         },
         {
             id: 2,
-            title: "Juice - V8, Tomato",
+            title: "Brownie",
             price: 4273,
             stock: 16,
             category: null,
@@ -19,7 +19,7 @@ const products = [
         },
         {
             id: 3,
-            title: "Nut - Peanut, Roasted",
+            title: "Macarons",
             price: 4683,
             stock: 7,
             category: null,
@@ -28,7 +28,7 @@ const products = [
         },
         {
             id: 4,
-            title: "Pastry - Choclate Baked",
+            title: "Muffin",
             price: 4111,
             stock: 9,
             category: null,
@@ -46,7 +46,7 @@ const products = [
         },
         {
             id: 6,
-            title: "Wine - Charddonnay Errazuriz",
+            title: "Pastel de Chocolate",
             price: 4140,
             stock: 8,
             category: null,
@@ -55,7 +55,7 @@ const products = [
         },
         {
             id: 7,
-            title: "Jicama",
+            title: "Muffin con Dulce de leche",
             price: 4318,
             stock: 17,
             category: null,
@@ -64,7 +64,7 @@ const products = [
         },
         {
             id: 8,
-            title: "Wine - Chenin Blanc K.w.v.",
+            title: "Cheese Cake con Salsa de Frambuesa",
             price: 1553,
             stock: 15,
             category: null,
@@ -73,7 +73,7 @@ const products = [
         },
         {
             id: 9,
-            title: "Venison - Racks Frenched",
+            title: "postre",
             price: 1458,
             stock: 14,
             category: null,
@@ -82,7 +82,7 @@ const products = [
         },
         {
             id: 10,
-            title: "Wine - Red, Harrow Estates, Cab",
+            title: "Vatrushka",
             price: 2060,
             stock: 17,
             category: null,
@@ -91,7 +91,7 @@ const products = [
         },
         {
             id: 11,
-            title: "Long Island Ice Tea",
+            title: "Torta",
             price: 4198,
             stock: 19,
             category: null,
@@ -100,7 +100,7 @@ const products = [
         },
         {
             id: 12,
-            title: "Sprouts - Brussel",
+            title: "Tiramisú",
             price: 1946,
             stock: 8,
             category: null,
@@ -109,7 +109,7 @@ const products = [
         },
         {
             id: 13,
-            title: "Corn Kernels - Frozen",
+            title: "Torta",
             price: 3884,
             stock: 18,
             category: null,
@@ -118,7 +118,7 @@ const products = [
         },
         {
             id: 14,
-            title: "Venison - Ground",
+            title: "Pastel de Fruta",
             price: 4724,
             stock: 11,
             category: null,
@@ -127,7 +127,7 @@ const products = [
         },
         {
             id: 15,
-            title: "Olive - Spread Tapenade",
+            title: "Pan Dulce",
             price: 4428,
             stock: 14,
             category: null,
@@ -136,7 +136,7 @@ const products = [
         },
         {
             id: 16,
-            title: "Wine - Red, Pinot Noir, Chateau",
+            title: "Pastel de Fruta",
             price: 1319,
             stock: 13,
             category: null,
@@ -145,7 +145,7 @@ const products = [
         },
         {
             id: 17,
-            title: "Tea - Lemon Green Tea",
+            title: "Torta de Naranja",
             price: 1313,
             stock: 15,
             category: null,
@@ -154,7 +154,7 @@ const products = [
         },
         {
             id: 18,
-            title: "Wine - Cotes Du Rhone",
+            title: "Pancakes",
             price: 2132,
             stock: 7,
             category: null,
@@ -163,7 +163,7 @@ const products = [
         },
         {
             id: 19,
-            title: "Pie Shells 10",
+            title: "Tarta de Requesón",
             price: 2458,
             stock: 14,
             category: null,
@@ -172,13 +172,13 @@ const products = [
         },
         {
             id: 20,
-            title: "Lettuce - Spring Mix",
+            title: "Tarta de Ricota",
             price: 1954,
             stock: 9,
             category: null,
             thumbnail: "/img/cheesecake-g85a220974_1280.jpg",
             description: "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus."
-        }
+        },
 ]
 
 export default products;
