@@ -1,12 +1,18 @@
 import { useState, useEffect } from 'react'
 import ItemList from "./ItemList/ItemList"
 import getItems from '../../Services/mockService'
+import { useParams } from 'react-router-dom'
 
 
 const ItemListContainer = () => {
 
   const [products, setProducts] = useState([])
 
+  const { id } = useParams()
+  console.log(useParams())
+  
+  
+/*
   useEffect(
     () => {
       getItems().then((respuestaDatos) => {
@@ -14,11 +20,13 @@ const ItemListContainer = () => {
       })
     }, [])
 
- /* 
- EJEMPLO DE CON ASYNC
+  */
+
+ 
+//  EJEMPLO DE CON ASYNC
  const getItemsAsync = async () => {
    try {
-     let respuesta = await getItems()
+     let respuesta = await getItems(id)
      setProducts(respuesta)
 
    } catch (errorMsg) {
@@ -28,8 +36,7 @@ const ItemListContainer = () => {
 
  useEffect(() => {
    getItemsAsync()
- }, [])
- */
+ }, [id])
 
   return (
     <div className='px-5 pt-28'>
