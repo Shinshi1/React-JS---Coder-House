@@ -438,8 +438,8 @@ video {
 .gap-1{
   gap: 0.25rem;
 }
-.p-10{
-  padding: 2.5rem;
+.p-7{
+  padding: 1.75rem;
 }
 .px-5{
   padding-left: 1.25rem;
@@ -462,8 +462,15 @@ video {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
 .font-bold{
   font-weight: 700;
+}
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 body {
     background-color: #ffc930;
@@ -472,16 +479,14 @@ body {
 .footer-container {
     background-image: linear-gradient(to right bottom, #59bab7, #51b3b0, #49aba9, #41a4a2, #399d9b, #329795, #2b918f, #248b89, #1d8482, #157d7b, #0b7775, #00706e);
 }
-.item-count-container {
-    background: #000000;
-    background: var(--bg-cards);
+.itemcount_container {
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
 }
-.btn-count {
+.itemcount_btn {
     font-family: 'poppins';
     font-weight:500;
     border-radius: 50%;
@@ -491,11 +496,11 @@ body {
     scale: 1.1;
     margin: .7rem;
 }
-.btn-count:hover {
+.itemcount_btn:hover {
     background-color: var(--color-primary-h);
     transition: background-color .3s;
 }
-.btn-count:active {
+.itemcount_btn:active {
     scale: .9;
     background-color: var(--color-primary-a);
     transition: background-color .1s;
@@ -517,8 +522,20 @@ body {
     background-color: var(--color-primary-a);
     transition: background-color .1s;
 }
-.detail {
-    background-color: red;
+.card-detail--focus {
+    color: #fff;
+    margin: 0px 15px;
+    min-height: 400px;
+    width: 500px;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.50);
+    background: #000000;
+    background: var(--bg-cards);
+    overflow: hidden;  
+    transition: all 0.20s ease-in;
+    cursor: pointer;
+    text-align: center;
 }
 .card-img{
     width: 280px;
@@ -531,14 +548,15 @@ body {
     object-fit: cover;
   }
 .card{
-    color: #444444;
+    color: #fff;
     margin: 0px 15px;
     min-height: 400px;
     width: 280px;
     height: 100%;
     border-radius: 4px;
     box-shadow: 0px 0px 4px rgba(0,0,0,0.50);
-    background-color: #fff;
+    background: #000000;
+    background: var(--bg-cards);
     overflow: hidden;  
     transition: all 0.20s ease-in;
     cursor: pointer;
@@ -551,16 +569,13 @@ body {
 .card-detail{
     color: #fff;
     padding: 12px 8px;
-    background: #000000;
-    background: var(--bg-cards);
-    
-
   }
 small{
     color: #8c8c8e;
   }
 .priceTag{
-    color: #444444;
+    text-align: center;
+    color: #fff;
     font-weight: bold;
   }
 .offerTag{
@@ -574,11 +589,11 @@ small{
     background-position: center;
     justify-items: center;
 }
-.btn-info-container {
-    background: #000000;
-    background: var(--bg-cards);
+.mybutton_container {
+    background: transparent;
+    text-align: center;
 }
-.btn-info {
+.mybutton {
     background-color: var(--color-primary);
     color: #fff;
     font-weight: 500;
@@ -586,17 +601,17 @@ small{
     border-radius: 30px;
     scale: .8;
 }
-.btn-info:active {
+.mybutton:active {
     scale: .7;
     background-color: var(--color-primary-a);
     transition: background-color .1s;
 }
-.btn-info:hover {
+.mybutton:hover {
     background-color: var(--color-primary-h);
     transition: background-color .3s;
 }
 .header {
-    height: 5.5rem;
+    height: 4.5rem;
     width: 100%;
     position: fixed;
     z-index: 1000000;
@@ -619,7 +634,7 @@ small{
     font-family: var(--font-family-2);
     font-weight: bold;
     padding: 0 2.5rem;
-    line-height: 5.5rem;
+    line-height: 4.5rem;
 }
 .nav-menu {
     display: flex;

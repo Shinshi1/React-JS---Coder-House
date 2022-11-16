@@ -15,9 +15,9 @@ const Item = ({id, title, price, stock, category, thumbnail}) => {
         <p>${price}</p>
       </div>
       <Link to={urlDetail}>
-      <MyButton> Ver más </MyButton>   
+      <MyButton classBtn={"mybutton"}>Ver más</MyButton>   
       </Link>
-        <ItemCount stock={stock} title="Agregar al Carrito" />
+        <ItemCount stock={stock} />
     </div>
   )
 }

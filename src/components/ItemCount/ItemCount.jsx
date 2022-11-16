@@ -1,24 +1,27 @@
 import React, { useState } from 'react'
+import MyButton from '../MyButton/MyButton';
 import './itemcount.css'
-const ItemCount = ({stock, title}) => {
-    let [ count, setCount ] = useState(1);
+const ItemCount = ({ stock, onAddToCart }) => {
+    let [count, setCount] = useState(1);
 
-    const sumaCount = () => {
+    const handleAdd = () => {
         if (count < stock) setCount(count + 1)
     }
 
-    const restaCount = () => {
+    const handleSubstract = () => {
         if (count > 1) setCount(count - 1)
     }
 
+
+
     return (
         <div>
-            <div className='item-count-container'>         
-            <button onClick={sumaCount} className="btn-count" >+</button>
-            <span>{count}</span>
-            <button onClick={restaCount} className="btn-count" >-</button>
+            <div className='itemcount_container'>
+                <MyButton onClick={handleSubstract} classBtn="itemcount_btn" >-</MyButton>
+                <span>{count}</span>
+                <MyButton onClick={handleAdd} classBtn="itemcount_btn" >+</MyButton>
             </div>
-            <button className='agregar-cart'>{title}</button>
+            <button onClick={()=> onAddToCart(count)} className='agregar-cart'>Agregar al Carrito</button>
         </div>
     )
 }

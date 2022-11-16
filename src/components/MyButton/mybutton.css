@@ -1,9 +1,9 @@
-.btn-info-container {
-    background: #000000;
-    background: var(--bg-cards);
+.mybutton_container {
+    background: transparent;
+    text-align: center;
 }
 
-.btn-info {
+.mybutton {
     background-color: var(--color-primary);
     color: #fff;
     font-weight: 500;
@@ -12,13 +12,13 @@
     scale: .8;
 }
 
-.btn-info:active {
+.mybutton:active {
     scale: .7;
     background-color: var(--color-primary-a);
     transition: background-color .1s;
 }
 
-.btn-info:hover {
+.mybutton:hover {
     background-color: var(--color-primary-h);
     transition: background-color .3s;
 }

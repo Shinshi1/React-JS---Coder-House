@@ -9,7 +9,7 @@ import PhoneWidget from './PhoneWidget'
 
 const Footer = () => {
   return (
-    <footer className='flex items-center justify-around w-full p-10 mt-8 footer-container'>
+    <footer className='flex items-center justify-around w-full mt-8 p-7 footer-container'>
         <div className='flex flex-col gap-3'>
             <h5 className='text-xl font-bold font-philosopher'>Redes</h5>
             <a href="/"><FacebookWidget /></a> 

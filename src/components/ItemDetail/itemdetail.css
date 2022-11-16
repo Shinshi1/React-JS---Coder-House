@@ -1,0 +1,15 @@
+.card-detail--focus {
+    color: #fff;
+    margin: 0px 15px;
+    min-height: 400px;
+    width: 500px;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.50);
+    background: #000000;
+    background: var(--bg-cards);
+    overflow: hidden;  
+    transition: all 0.20s ease-in;
+    cursor: pointer;
+    text-align: center;
+}

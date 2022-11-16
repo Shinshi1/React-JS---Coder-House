@@ -18,6 +18,7 @@ function App() {
 
 
         <Route path='/detail/:id' element={<ItemDetailContainer />} />
+        <Route path='/cart' element={<h1>Esta en Contrucción</h1>} />
         <Route path='*' element={<Error404 />} />
       </Routes>
       <Footer />
