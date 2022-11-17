@@ -1,0 +1,10 @@
+.cart-count {
+    background: #fff;
+    color: #000;
+    padding: .7rem;
+    clip-path: circle(30% at 50% 50%);
+
+    position: relative;
+    top: -7px;
+    left: 1rem
+}

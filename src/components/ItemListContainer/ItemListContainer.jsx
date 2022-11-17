@@ -9,7 +9,7 @@ const ItemListContainer = () => {
   const [products, setProducts] = useState([])
 
   const { id } = useParams()
-  console.log(useParams())
+  // console.log(useParams())
   
   
 /*
@@ -39,7 +39,7 @@ const ItemListContainer = () => {
  }, [id])
 
   return (
-    <div className='px-5 pt-28'>
+    <div className='px-5 pb-12 pt-28'>
       <ItemList products={products} />
     </div>
   )

@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
       }, [])
     
     return (
-        <div className='px-5 pt-28 item-list'>
+        <div className='pt-28 item-list-detail pb-14'>
             <ItemDetail product={product} />
         </div>
     )
