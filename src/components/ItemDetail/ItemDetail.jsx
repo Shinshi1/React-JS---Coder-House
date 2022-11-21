@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 const ItemDetail = ({ product }) => {
 
   const { addToCart } = useContext(cartContext)
-  
-  let [addedToCart, setAddedToCart] = useState(false)
+
+  let [isInCart, setIsInCart] = useState(false)
 
   const onAddToCart = (count) => {
-    setAddedToCart(count)
+    setIsInCart(count)
 
     addToCart(product, count)
   }
@@ -26,16 +26,15 @@ const ItemDetail = ({ product }) => {
         <p>{product.description}</p>
         <h4 className="priceTag">$ {product.price}</h4>
       </div>
-      {/* {addedToCart === false ?
-        <ItemCount onAddToCart={onAddToCart} stock={product.stock} />
-        : <div>
-            <span> Agregaste {addedToCart} items al Carrito </span>
-            <Link to={"/cart"}> Ir a ver el Carrito</Link>
-        </div>
-      } */}
-      <ItemCount onAddToCart={onAddToCart} stock={product.stock} />
+      {
+        isInCart ?
+          <Link to={"/cart"}> <button className='btn-info'>Ir al Carrito</button></Link>
+        : 
+        <ItemCount onAddToCart={product.stock > 0 && onAddToCart} stock={product.stock} />
+      }
     </div>
   );
 }
 
 export default ItemDetail;
+

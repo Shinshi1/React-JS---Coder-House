@@ -3,6 +3,7 @@ const products = [
             id: 1,
             title: "Torta de Chocolate",
             price: 4139,
+            discount: '20%',
             stock: 18,
             category: "torta",
             thumbnail: "/img/postr-291528.jpg",
@@ -12,6 +13,7 @@ const products = [
             id: 2,
             title: "Brownie",
             price: 4273,
+            discount: '25%',
             stock: 16,
             category: "postre",
             thumbnail: "/img/choclt-45202.jpg",
@@ -21,7 +23,7 @@ const products = [
             id: 3,
             title: "Macarons",
             price: 4683,
-            stock: 7,
+            stock: 0,
             category: "postre",
             thumbnail: "/img/macarons-121.jpg",
             description: "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
@@ -39,7 +41,7 @@ const products = [
             id: 5,
             title: "Loquat",
             price: 4355,
-            stock: 8,
+            stock: 0,
             category: null,
             thumbnail: "/img/pastr-5419104.jpg",
             description: "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus."
@@ -93,7 +95,7 @@ const products = [
             id: 11,
             title: "Torta",
             price: 4198,
-            stock: 19,
+            stock: 0,
             category: "torta",
             thumbnail: "/img/cake-g317c9185a_1280.jpg",
             description: "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis."

@@ -411,11 +411,27 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.m-auto{
+  margin: auto;
+}
+.my-56{
+  margin-top: 14rem;
+  margin-bottom: 14rem;
+}
 .flex{
   display: flex;
 }
+.table{
+  display: table;
+}
+.h-full{
+  height: 100%;
+}
 .w-full{
   width: 100%;
+}
+.table-fixed{
+  table-layout: fixed;
 }
 .flex-row{
   flex-direction: row;
@@ -425,6 +441,9 @@ video {
 }
 .items-center{
   align-items: center;
+}
+.justify-center{
+  justify-content: center;
 }
 .justify-around{
   justify-content: space-around;
@@ -472,6 +491,10 @@ video {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
 .font-bold{
   font-weight: 700;
 }
@@ -481,6 +504,24 @@ video {
 body {
     background-color: #ffc930;
     background: center no-repeat url('/public/img/wall-123.jpg');
+}
+.cartview-container {
+    height: 100vh;
+    width: 100%;
+    background-color: beige;
+}
+.table-cart {
+    background: var(--bg-body);
+    min-height: 100px;
+    height: auto;
+    min-width: 600px;
+    width: auto;
+    border-radius: 5px;
+}
+.table-cart td{
+  padding: 1rem;
+  padding-top: 0px;
+    border-bottom: rgba(0, 0, 0, 0.692) 1px solid;
 }
 .footer-container {
     background-image: linear-gradient(to right bottom, #59bab7, #51b3b0, #49aba9, #41a4a2, #399d9b, #329795, #2b918f, #248b89, #1d8482, #157d7b, #0b7775, #00706e);
@@ -556,6 +597,24 @@ body {
 .card-detail--focus img {
     aspect-ratio: 1.2;
     object-fit: cover;
+}
+.btn-info {
+    font-family: 'poppins';
+    font-weight:500;
+    background-color: var(--color-primary);
+    scale: 1.1;
+    margin: .7rem;
+    padding: .2rem;
+    border-radius: .4rem;
+}
+.btn-info:hover {
+    background-color: var(--color-primary-h);
+    transition: background-color .3s;
+}
+.btn-info:active {
+    scale: 1;
+    background-color: var(--color-primary-a);
+    transition: background-color .1s;
 }
 .card-img{
     width: 280px;

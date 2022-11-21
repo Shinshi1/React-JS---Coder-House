@@ -2,45 +2,45 @@ import { useState, useEffect } from 'react'
 import ItemList from "./ItemList/ItemList"
 import getItems from '../../Services/mockService'
 import { useParams } from 'react-router-dom'
+import Loader from '../Loader/Loader'
 
 
 const ItemListContainer = () => {
 
-  const [products, setProducts] = useState([])
+  const [products, setProducts] = useState(null)
 
   const { id } = useParams()
   // console.log(useParams())
+
+  /*
+    useEffect(
+      () => {
+        getItems(id).then((respuestaDatos) => {
+          setProducts(respuestaDatos)
+        })
+      }, [id])
   
-  
-/*
-  useEffect(
-    () => {
-      getItems().then((respuestaDatos) => {
-        setProducts(respuestaDatos)
-      })
-    }, [])
+    */
 
-  */
 
- 
-//  EJEMPLO DE CON ASYNC
- const getItemsAsync = async () => {
-   try {
-     let respuesta = await getItems(id)
-     setProducts(respuesta)
+  //  EJEMPLO DE CON ASYNC
+  const getItemsAsync = async () => {
+    try {
+      let respuesta = await getItems(id)
+      setProducts(respuesta)
 
-   } catch (errorMsg) {
-     console.log(errorMsg)
-   }
- }
+    } catch (errorMsg) {
+      console.log(errorMsg)
+    }
+  }
 
- useEffect(() => {
-   getItemsAsync()
- }, [id])
+  useEffect(() => {
+    getItemsAsync()
+  }, [id])
 
   return (
     <div className='px-5 pb-12 pt-28'>
-      <ItemList products={products} />
+      {products ? <ItemList products={products} /> : <Loader />}
     </div>
   )
 }

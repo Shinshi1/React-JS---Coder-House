@@ -1,23 +1,25 @@
 import "./item.css"
 import MyButton from "../../../MyButton/MyButton"
-import ItemCount from "../../../ItemCount/ItemCount"
 import { Link } from "react-router-dom"
 
-const Item = ({id, title, price, stock, category, thumbnail}) => {
-  const urlDetail = `/detail/${id}`
+const Item = ({product}) => {
+  
+  
+  const urlDetail = `/detail/${product.id}`
   return (
     <div className="card">
       <div className="card-img">
-        <img src={thumbnail} alt={title} />
+        <img src={product.thumbnail} alt={product.title} />
       </div>
       <div className="card-detail">
-        <h3>{title}</h3>
-        <p>${price}</p>
+        <h3 className="font-bold ">{product.title}</h3>
+        <h4 style={{color: product.discount && '#85BB65'}}>${product.price}</h4>
+        {product.discount && <small>descuento: {product.discount}</small>}
+        {product.stock <= 0 && <h4>Sin Stock disponible</h4>}
       </div>
       <Link to={urlDetail}>
-      <MyButton classBtn={"mybutton"}>Ver más</MyButton>   
+        <MyButton classBtn={"mybutton"} color={product.stock <= 0 && "grey"}>Ver más</MyButton>   
       </Link>
-        <ItemCount stock={stock} />
     </div>
   )
 }

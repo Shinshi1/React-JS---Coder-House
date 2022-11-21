@@ -41,19 +41,23 @@ export const CartContextProvider = ({ children }) => {
 
     const removeItem = (idRemove) => {
         // cart.filter -> Filtrar todos los item con un ID diferente al "idRemove"
+        console.log(`removimos el item con el id ${idRemove}`)
     }
 
     const priceInCart = () => {
-        // let total = 0
-        // cart.forEach((priceItem) => (total = total + priceItem.price))
-        // return total
+        let total = 0
+        cart.forEach((Item) => (total = total + Item.price * Item.count))
+        return total
     }
 
     const value = {
         saldudoContext,
         itemsInCart,
         cart,
-        addToCart
+        addToCart,
+        removeItem,
+        clear,
+        priceInCart,
     }
     // 3. retornamos el provider del context creado
     // 4. Pasamos en la prop "value" las variables que queramos hacer visibles

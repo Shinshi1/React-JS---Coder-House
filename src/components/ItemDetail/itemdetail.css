@@ -28,3 +28,24 @@
     aspect-ratio: 1.2;
     object-fit: cover;
 }
+
+.btn-info {
+    font-family: 'poppins';
+    font-weight:500;
+    background-color: var(--color-primary);
+    scale: 1.1;
+    margin: .7rem;
+    padding: .2rem;
+    border-radius: .4rem;
+}
+
+.btn-info:hover {
+    background-color: var(--color-primary-h);
+    transition: background-color .3s;
+}
+
+.btn-info:active {
+    scale: 1;
+    background-color: var(--color-primary-a);
+    transition: background-color .1s;
+}
