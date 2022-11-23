@@ -424,9 +424,6 @@ video {
 .table{
   display: table;
 }
-.h-full{
-  height: 100%;
-}
 .w-full{
   width: 100%;
 }
@@ -473,11 +470,18 @@ video {
 .pb-12{
   padding-bottom: 3rem;
 }
+.text-center{
+  text-align: center;
+}
 .font-philosopher{
   font-family: Philosopher, sans-serif;
 }
 .font-poppins{
   font-family: Poppins, sans-serif;
+}
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .text-xl{
   font-size: 1.25rem;
@@ -490,10 +494,6 @@ video {
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 .font-bold{
   font-weight: 700;
@@ -525,6 +525,16 @@ body {
 }
 .footer-container {
     background-image: linear-gradient(to right bottom, #59bab7, #51b3b0, #49aba9, #41a4a2, #399d9b, #329795, #2b918f, #248b89, #1d8482, #157d7b, #0b7775, #00706e);
+}
+.cart-icon {
+    scale: 1.2;
+    transition: scale .1s;
+}
+.cart-icon:active {
+    scale: .9;
+}
+.cart-icon--small {
+    scale: .7;
 }
 .itemcount_container {
     color: #fff;
@@ -756,11 +766,4 @@ small{
     padding: 0 2.5rem;
     margin: 1.5rem 0;
     cursor: pointer;
-}
-.cart-icon {
-    scale: 1.2;
-    transition: scale .1s;
-}
-.cart-icon:active {
-    scale: .9;
 }

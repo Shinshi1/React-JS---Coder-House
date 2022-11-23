@@ -41,7 +41,10 @@ export const CartContextProvider = ({ children }) => {
 
     const removeItem = (idRemove) => {
         // cart.filter -> Filtrar todos los item con un ID diferente al "idRemove"
-        console.log(`removimos el item con el id ${idRemove}`)
+        let itemRemove = cart.filter((item) => {
+            return item.id !== idRemove
+        })
+        setCart(itemRemove)
     }
 
     const priceInCart = () => {

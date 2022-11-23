@@ -65,11 +65,3 @@
     cursor: pointer;
 }
 
-.cart-icon {
-    scale: 1.2;
-    transition: scale .1s;
-}
-
-.cart-icon:active {
-    scale: .9;
-}

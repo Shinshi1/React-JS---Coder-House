@@ -8,8 +8,6 @@ import CartView from './components/CartView/CartView';
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import { CartContextProvider } from './components/context/cartContext';
 
-//--
-
 function App() {
   return (
     <>
@@ -18,7 +16,7 @@ function App() {
           <NavBar />
           <Routes>
             <Route path='/' element={<ItemListContainer />} />
-            <Route path='/category/:id' element={<ItemListContainer />} />
+            <Route path='/category/:idCategory' element={<ItemListContainer />} />
 
             <Route path='/detail/:id' element={<ItemDetailContainer />} />
             <Route path='/cart' element={<CartView />} />

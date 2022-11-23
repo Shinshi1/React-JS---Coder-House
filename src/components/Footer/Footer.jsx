@@ -5,6 +5,7 @@ import InstagramWidget from './InstagramWidget'
 import Logo from '../NavBar/Logo/Logo'
 import MailWidget from './MailWidget'
 import PhoneWidget from './PhoneWidget'
+import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
@@ -12,8 +13,8 @@ const Footer = () => {
     <footer className='flex items-center justify-around w-full p-7 footer-container'>
         <div className='flex flex-col gap-3'>
             <h5 className='text-xl font-bold font-philosopher'>Redes</h5>
-            <a href="/"><FacebookWidget /></a> 
-            <a href="/"><InstagramWidget /></a>
+            <Link to={"/"}><FacebookWidget /></Link> 
+            <Link to={"/"}><InstagramWidget /></Link>
         </div>
         <Logo />
         <div className='flex flex-col gap-3'>

@@ -3,6 +3,7 @@ import './cart.css'
 import { cartContext } from '../context/cartContext'
 import MyButton from '../MyButton/MyButton'
 import { Link } from 'react-router-dom'
+import CartArrowDownIcon from '../Icons/CartArrowDownIcon'
 
 const CartView = () => {
 
@@ -18,13 +19,14 @@ const CartView = () => {
 
     return (
         <div className='flex flex-col items-center justify-center cartview-container'>
-            <table className="table-fixed table-cart">
+            <table className="text-center table-fixed table-cart">
                 <thead>
                     <tr>
                         <th>Producto</th>
                         <th>Precio</th>
                         <th>Cantidad</th>
                         <th>SubTotal</th>
+                        <th>Eliminar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -34,7 +36,7 @@ const CartView = () => {
                             <td>{item.price}</td>
                             <td>{item.count}</td>
                             <td>{item.price}</td>
-                            <td><MyButton onClick={() => removeItem(item.id)} classBtn="itemcount_btn">X</MyButton> </td>
+                            <td><MyButton color="white" onClick={() => removeItem(item.id)} classBtn="itemcount_btn"><CartArrowDownIcon /></MyButton> </td>
                         </tr>
                     ))}
                 </tbody>

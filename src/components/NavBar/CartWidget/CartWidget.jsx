@@ -4,7 +4,7 @@ import React, { useContext } from "react"
 import { cartContext } from "../../context/cartContext"
 
 import './cartwidget.css'
-import CartIcon from "./CartIcon"
+import CartIcon from "../../Icons/CartIcon"
 import { Link } from "react-router-dom"
 const CartWidget = () => {
   // 3. Inicializamos el contexto deseado
