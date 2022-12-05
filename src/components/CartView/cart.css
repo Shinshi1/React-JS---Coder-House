@@ -1,5 +1,6 @@
 .cartview-container {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     width: 100%;
     background-color: beige;
 }
@@ -13,7 +14,32 @@
     border-radius: 5px;
 }
 
+.btn-cart {
+    background-color: var(--color-primary);
+    font-size: .87rem;
+    font-family: 'poppins';
+    font-weight:500;
+    padding: .2rem;
+    border-radius: .4rem;
+}
+
+.btn-cart:hover {
+    background-color: var(--color-primary-h);
+    transition: background-color .3s;
+}
+
+.btn-cart:active {
+    scale: 1;
+    background-color: var(--color-primary-a);
+    transition: background-color .1s;
+}
+
 .table-cart td {
     @apply p-4 pt-0;
+    border-bottom: rgba(0, 0, 0, 0.692) 1px solid;
+}
+
+.table-cart th {
+    @apply px-1;
     border-bottom: rgba(0, 0, 0, 0.692) 1px solid;
 }

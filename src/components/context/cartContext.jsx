@@ -47,10 +47,17 @@ export const CartContextProvider = ({ children }) => {
         setCart(itemRemove)
     }
 
+    const priceInItem = (item) => {
+        // calcula el precio subtotal
+        let res = item
+        let subtotal = res.count * res.price
+        return subtotal
+    }
+
     const priceInCart = () => {
-        let total = 0
-        cart.forEach((Item) => (total = total + Item.price * Item.count))
-        return total
+        let totalPrice = 0
+        cart.forEach((Item) => (totalPrice = totalPrice + Item.price * Item.count))
+        return totalPrice
     }
 
     const value = {
@@ -61,6 +68,7 @@ export const CartContextProvider = ({ children }) => {
         removeItem,
         clear,
         priceInCart,
+        priceInItem,
     }
     // 3. retornamos el provider del context creado
     // 4. Pasamos en la prop "value" las variables que queramos hacer visibles

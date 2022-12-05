@@ -7,6 +7,7 @@ import Error404 from './components/Error404/Error404';
 import CartView from './components/CartView/CartView';
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import { CartContextProvider } from './components/context/cartContext';
+import Reserva from './components/Reserva/ReservaContainer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
 
             <Route path='/detail/:id' element={<ItemDetailContainer />} />
             <Route path='/cart' element={<CartView />} />
+            <Route path='/reserva/:idOrder' element={<Reserva />} />
             <Route path='*' element={<Error404 />} />
           </Routes>
           <Footer />
