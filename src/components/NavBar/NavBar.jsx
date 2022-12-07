@@ -1,4 +1,4 @@
-import './navbar.css'
+// import './navbar.css'
 import Logo from './Logo/Logo'
 import CartWidget from "./CartWidget/CartWidget"
 import { Link } from 'react-router-dom'
