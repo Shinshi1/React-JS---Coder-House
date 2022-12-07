@@ -2,7 +2,8 @@
     min-height: 100vh;
     height: auto;
     width: 100%;
-    background-color: beige;
+    background: center no-repeat url('/public/img/wall-cart.jpg');
+    background-size: cover;
 }
 
 .table-cart {
@@ -18,7 +19,7 @@
     background-color: var(--color-primary);
     font-size: .87rem;
     font-family: 'poppins';
-    font-weight:500;
+    font-weight: 500;
     padding: .2rem;
     border-radius: .4rem;
 }
@@ -35,11 +36,20 @@
 }
 
 .table-cart td {
-    @apply p-4 pt-0;
+    @apply p-1;
     border-bottom: rgba(0, 0, 0, 0.692) 1px solid;
 }
 
 .table-cart th {
     @apply px-1;
     border-bottom: rgba(0, 0, 0, 0.692) 1px solid;
+}
+
+.form-container {
+    height: auto;
+    width: auto;
+
+
+    background-color: #e5e5f7a6;
+    backdrop-filter: blur(2px);
 }

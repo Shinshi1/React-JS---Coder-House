@@ -5,8 +5,6 @@ import WideItem from './WideItem'
 import './reserva.css'
 
 const OrderDetail = ({ order }) => {
-    console.log('orden en detail', order)
-    console.log('ITEMS en detail', order.items)
     return (
         <div className='px-5 pb-12 text-center reserva-container pt-28'>
 

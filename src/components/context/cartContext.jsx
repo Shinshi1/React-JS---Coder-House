@@ -16,10 +16,10 @@ export const CartContextProvider = ({ children }) => {
 
         let newCart = cart.map((item) => item )
 
-        console.log("--->", itemAlredyInCart)
+        // console.log("--->", itemAlredyInCart)
         
         if (itemAlredyInCart !== -1 ) {
-            console.log('items agregados', count)
+            // console.log('items agregados', count)
             newCart[itemAlredyInCart].count += count;
             setCart(newCart)
         } else {

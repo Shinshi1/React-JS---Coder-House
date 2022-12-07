@@ -17,7 +17,7 @@ export default function CartForm(props) {
     let newData = { ...data }
     newData[nameInput] = value;
     setData(newData)
-    console.log(newData)
+    // console.log(newData)
   }
 
   function onSubmit(evt) {
@@ -32,17 +32,17 @@ export default function CartForm(props) {
       <div style={{ display: "flex", marginBottom: 8 }}>
         {/* Falta name al input y forHtml a los label */}
         <label htmlFor="name" style={{ width: "100px", marginRight: 4 }}>Nombre</label>
-        <input value={data.name} name="name" type="text" onChange={onInputChange} required />
+        <input className="rounded-md outline-none" style={{'backgroundColor': '#eee'}} value={data.name} name="name" type="text" onChange={onInputChange} required />
       </div>
 
       <div style={{ display: "flex", marginBottom: 8 }}>
         <label htmlFor="email" style={{ width: "100px", marginRight: 4 }}>Email</label>
-        <input value={data.email} name="email" type="email" onChange={onInputChange} required />
+        <input className="rounded-md outline-none" style={{'backgroundColor': '#eee'}} value={data.email} name="email" type="email" onChange={onInputChange} required />
       </div>
 
       <div style={{ display: "flex", marginBottom: 8 }}>
         <label htmlFor="phone" style={{ width: "100px", marginRight: 4 }}>Teléfono</label>
-        <input value={data.phone} name="phone" type="phone" onChange={onInputChange} required />
+        <input className="rounded-md outline-none" style={{'backgroundColor': '#eee'}} value={data.phone} name="phone" type="phone" onChange={onInputChange} required />
       </div>
 
       <button

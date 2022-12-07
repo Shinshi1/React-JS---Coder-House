@@ -17,7 +17,6 @@ const Reserva = () => {
     let res = await getOrder(idOrder)
     setOrder(res)
   }
-  console.log('orden en componente reserva', order)
 
   useEffect(() => {
     getOrderAsync()

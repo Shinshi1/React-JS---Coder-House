@@ -11,6 +11,7 @@ Es una tienda online de venta postres
 Contiene una tabla con los detalles de la Compra y un Formulario que el usuario debera llenar para generar el pedido.
 4. Nuestra base de datos es firestore/firebase de google
 5. Orden del pedido, con detalles de los productos seleccionados por el usuario.
+
 ## Tecnologías utilizadas...
 - React JS
 - Postcss
